@@ -3,6 +3,8 @@ import { compose, withProps, withState, withHandlers } from 'recompose';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker, InfoWindow } from "react-google-maps";
 import { FaTree } from 'react-icons/fa';
 
+import snazzyMap from '../../utils/snazzyMap.json';
+
 const Map = compose(
     withProps({
         googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDdUXGQw9M4Ev1RgXWfHeoodC8cGcVRSiI&v=3.exp&libraries=geometry,drawing,places",
@@ -33,6 +35,7 @@ const Map = compose(
         zoom={props.zoom}
         ref={props.onMapMounted}
         onZoomChanged={props.onZoomChanged}
+        defaultOptions={{ styles: snazzyMap }}
     >
         <Marker
             position={{ lat: 40.712776, lng: -74.005974 }}
