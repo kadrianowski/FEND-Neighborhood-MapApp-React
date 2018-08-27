@@ -14,6 +14,7 @@
 * [Create React App](https://github.com/facebook/create-react-app) repository
 * I used a premade styling from [SnazzyMaps](https://snazzymaps.com/style/6618/cladme). All styles are licensed under [creative commons](https://creativecommons.org/publicdomain/zero/1.0/) and are completely free to use
 * [react-google-maps](https://github.com/tomchentw/react-google-maps) package. The best documented component I've found, you can read the docs [here](https://tomchentw.github.io/react-google-maps/)
+* [react-icons](https://github.com/react-icons/react-icons). It's a package of all popular icons from the interwebs
 
 # Special Thanks
 

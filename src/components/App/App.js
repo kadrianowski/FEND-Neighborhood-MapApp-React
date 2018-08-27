@@ -10,7 +10,9 @@ class App extends Component {
       <div className="app">
         <Header />
         <div className="content">
-          <Map />
+          <Map
+            mapElement={<div style={{ height: `100%` }}></div>}
+          />
         </div>
         <Footer />
       </div>
