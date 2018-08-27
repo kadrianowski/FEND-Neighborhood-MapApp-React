@@ -9,7 +9,7 @@ const Map = compose(
     withProps({
         googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDdUXGQw9M4Ev1RgXWfHeoodC8cGcVRSiI&v=3.exp&libraries=geometry,drawing,places",
         loadingElement: <div style={{ height: `100%` }} />,
-        containerElement: <div style={{ height: `400px` }} />,
+        containerElement: <div style={{ height: `477px` }} />,
         mapElement: <div style={{ height: `100%` }} />,
     }),
     withState('zoom', 'onZoomChange', 14),
