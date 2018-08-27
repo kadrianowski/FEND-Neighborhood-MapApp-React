@@ -6,7 +6,9 @@
 * Clone this [repository](https://github.com/soyaposeidon/FEND-Neighborhood-MapApp-React.git)
 * type **_npm install_** in your favorite console
 * run localhost:3000 server with **_npm start_**
-# Features
+# Features 
+
+
 # Dependencies
 
 * [Create React App](https://github.com/facebook/create-react-app) repository
