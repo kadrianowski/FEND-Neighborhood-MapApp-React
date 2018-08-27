@@ -1,0 +1,1 @@
+export const gKey = 'AIzaSyDdUXGQw9M4Ev1RgXWfHeoodC8cGcVRSiI';
