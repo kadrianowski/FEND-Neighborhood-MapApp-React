@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Header from '../components/Header';
-import Map from '../components/Map';
-import Footer from '../components/Footer';
+import Header from '../Header/Header';
+import Map from '../Map/Map';
+import Footer from '../Footer/Footer';
 import './App.css';
 
 class App extends Component {
