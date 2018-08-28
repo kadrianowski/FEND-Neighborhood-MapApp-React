@@ -1,0 +1,86 @@
+.details-place {
+    display: flex;
+    flex-flow: row wrap;
+    height: 290px;
+  }
+  
+  .details-title {
+    font-size: 22px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 450;
+    border-bottom: 1px solid #6f767956;
+    padding-bottom: 0.3em;
+    margin: 0;
+    opacity: 0.8;
+  }
+  
+  .details-title a {
+    color: #263238;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+  }
+
+  .details-title:hover a,
+  .details-title:focus  {
+    opacity: 1;
+    color: #0F9D58;
+  }
+  
+  .details-address {
+    width: 70%;
+    align-self: center;
+    color: #263238;
+    text-transform: uppercase;
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .details-rating {
+    position: relative;
+    align-self: center;
+  }
+  
+  .details-rating .rating-number {
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute;
+    top: 12px;
+    left: 8px;
+  }
+  
+  .details-rating .icon {
+    display: inline-block;
+    width: 35px;
+  }
+  .details-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  
+  .details-img img {
+    max-width: 100%;
+    margin: 0;
+  }
+  
+  .details-fsicon {
+    width: 10%;
+    padding-bottom: 5%;
+    align-self: flex-end;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .details-fsicon:hover,
+  .details-fsicon:focus {
+    opacity: 1;
+  }
+  
+  .details-fsicon img {
+    height: 28px;
+  }
+  

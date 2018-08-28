@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Header from '../Header/Header';
 import Map from '../Map/Map';
 import Footer from '../Footer/Footer';
-import MarkerData from '../../utils/markerData.json'
+import markerData from '../../utils/markerData.json'
 
 import './App.css';
 
@@ -13,13 +13,14 @@ class App extends Component {
     query: '',
     center: { lat: 40.712776, lng: -74.005974 },
     showInfoId: false,
+    loaded: false,
     action:''
   }
 
   componentDidMount() {
     this.setState({
-      places: MarkerData,
-      showingPlaces: MarkerData,
+      places: markerData,
+      showingPlaces: markerData,
       loaded: true
     });
   }
