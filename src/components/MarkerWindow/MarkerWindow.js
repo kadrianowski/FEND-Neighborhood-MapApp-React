@@ -24,7 +24,7 @@ class MarkerWindow extends Component {
                         <h1>
                             <FaTree />
                             {" "}
-                            City Hall Park
+                            {}
                     </h1>
                     </div>
                 </InfoWindow>
