@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Marker, InfoWindow } from 'react-google-maps';
 import { getDetails } from '../../utils/FoursquareAPI';
-//import { FaTree } from 'react-icons/fa';
+
 
 import MapPin from './map-pin.svg';
 import './MarkerWindow.css';
