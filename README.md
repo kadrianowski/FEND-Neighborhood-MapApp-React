@@ -2,13 +2,16 @@
 
 # About the Project
 
-It's a final SPA project featuring a map of a chosen neighborhood. The goal of this project was to create a functional project with a react mindset, including highlighted locations, third-party data about those locations and various ways to browse the content.
+It's a final SPA project featuring a map of a chosen neighborhood. The goal of this project was to create a functional project with a react mindset, including highlighted locations, third-party data about those locations and various ways to browse the content. 
+
+To achieve that I decided to create **_Neighborhood Map - Parks of New York_**
 
 # How to start?
 
 * Clone this [repository](https://github.com/soyaposeidon/FEND-Neighborhood-MapApp-React.git)
 * type **_npm install_** in your favorite console
 * run localhost:3000 server with **_npm start_**
+
 # Features 
 
 

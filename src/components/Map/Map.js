@@ -1,5 +1,5 @@
 import React from 'react';
-import { compose, withProps, withState, withHandlers } from 'recompose';
+import { compose, withProps} from 'recompose';
 import { withScriptjs, withGoogleMap, GoogleMap, Marker, InfoWindow } from "react-google-maps";
 import { FaTree } from 'react-icons/fa';
 
@@ -12,29 +12,13 @@ const Map = compose(
         containerElement: <div style={{ height: `477px` }} />,
         mapElement: <div style={{ height: `100%` }} />,
     }),
-    withState('zoom', 'onZoomChange', 14),
-    withHandlers(() => {
-        const refs = {
-            map: undefined,
-        }
-
-        return {
-            onMapMounted: () => ref => {
-                refs.map = ref
-            },
-            onZoomChanged: ({ onZoomChange }) => () => {
-                onZoomChange(refs.map.getZoom())
-            }
-        }
-    }),
     withScriptjs,
     withGoogleMap
 )(props =>
     <GoogleMap
         defaultCenter={{ lat: 40.712776, lng: -74.005974 }}
-        zoom={props.zoom}
+        defaultZoom={16}
         ref={props.onMapMounted}
-        onZoomChanged={props.onZoomChanged}
         defaultOptions={{ styles: snazzyMap }}
     >
         <Marker
@@ -43,9 +27,11 @@ const Map = compose(
         >
             <InfoWindow onCloseClick={props.onToggleOpen}>
                 <div>
-                    <FaTree />
-                    {" "}
-                    Controlled zoom: {props.zoom}
+                    <h1>
+                        <FaTree />
+                        {" "}
+                        City Hall Park
+                    </h1>
                 </div>
             </InfoWindow>
         </Marker>
