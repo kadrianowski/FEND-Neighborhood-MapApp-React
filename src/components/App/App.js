@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../Header/Header';
 import Map from '../Map/Map';
 import Footer from '../Footer/Footer';
+
 import './App.css';
 
 class App extends Component {

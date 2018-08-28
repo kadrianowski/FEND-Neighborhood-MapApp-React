@@ -37,7 +37,4 @@ const Map = compose(
         </Marker>
     </GoogleMap>
 );
-
-<Map />
-
 export default Map;
