@@ -1,7 +1,8 @@
 import React from 'react';
-import { compose, withProps} from 'recompose';
-import { withScriptjs, withGoogleMap, GoogleMap, Marker, InfoWindow } from "react-google-maps";
-import { FaTree } from 'react-icons/fa';
+import { compose, withProps } from 'recompose';
+import PropTypes from 'prop-types';
+import { withScriptjs, withGoogleMap, GoogleMap} from "react-google-maps";
+import MarkerWindow from '../MarkerWindow/MarkerWindow';
 
 import snazzyMap from '../../utils/snazzyMap.json';
 
@@ -21,20 +22,30 @@ const Map = compose(
         ref={props.onMapMounted}
         defaultOptions={{ styles: snazzyMap }}
     >
-        <Marker
-            position={{ lat: 40.712776, lng: -74.005974 }}
-            onClick={props.onToggleOpen}
-        >
-            <InfoWindow onCloseClick={props.onToggleOpen}>
-                <div>
-                    <h1>
-                        <FaTree />
-                        {" "}
-                        City Hall Park
-                    </h1>
-                </div>
-            </InfoWindow>
-        </Marker>
+        {
+            props.showingPlaces.length === 0 ?
+                props.places.map(place => (
+                    <MarkerWindow
+                        key={place.id}
+                        placeId={place.id}
+                        placePos={place.position}
+                        onToggleOpen={props.onToggleOpen}
+                        showInfoId={props.showInfoId}
+                        action={props.action}
+                    />
+                ))
+                :
+                props.showingPlaces.map(place => (
+                    <MarkerWindow
+                        key={place.id}
+                        placeId={place.id}
+                        placePos={place.position}
+                        onToggleOpen={props.onToggleOpen}
+                        showInfoId={props.showInfoId}
+                        action={props.action}
+                    />
+                ))
+        }
     </GoogleMap>
 );
 export default Map;
