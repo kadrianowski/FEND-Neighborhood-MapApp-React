@@ -7,16 +7,19 @@ import { FaTree } from 'react-icons/fa';
 class MarkerWindow extends Component {
     state = {
         placeDetails: {}
+
     }
 
     render() {
-        const google=window.google; // no-undef fix https://github.com/tomchentw/react-google-maps/issues/434
-        const {placePos, onToggleOpen, showInfoId, action } = this.props;
+        const google = window.google; // no-undef fix https://github.com/tomchentw/react-google-maps/issues/434
+        const { placeId, placePos, onToggleOpen } = this.props;
         return (
             <Marker
+                icon={{ url: FaTree }}
+                key={placeId}
                 position={placePos}
                 animation={google.maps.Animation.DROP}
-                onClick={() => onToggleOpen('open')}
+                onClick={() => onToggleOpen(placeId, 'open')}
 
             >
                 <InfoWindow onCloseClick={this.props.onToggleOpen}>
@@ -25,7 +28,7 @@ class MarkerWindow extends Component {
                             <FaTree />
                             {" "}
                             {}
-                    </h1>
+                        </h1>
                     </div>
                 </InfoWindow>
             </Marker>
