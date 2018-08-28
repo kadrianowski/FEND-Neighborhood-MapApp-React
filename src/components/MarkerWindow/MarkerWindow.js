@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Marker, InfoWindow } from 'react-google-maps';
 
 import { FaTree } from 'react-icons/fa';
-
+import MapPin from './map-pin.svg';
 class MarkerWindow extends Component {
     state = {
         placeDetails: {}
@@ -15,7 +15,7 @@ class MarkerWindow extends Component {
         const { placeId, placePos, onToggleOpen } = this.props;
         return (
             <Marker
-                icon={{ url: FaTree }}
+                icon={MapPin}
                 key={placeId}
                 position={placePos}
                 animation={google.maps.Animation.DROP}
