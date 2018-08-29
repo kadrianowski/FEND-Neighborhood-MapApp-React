@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Marker, InfoWindow } from 'react-google-maps';
 import { getDetails } from '../../utils/FoursquareAPI';
-
+import Error from '../Error/Error';
 
 import MapPin from './map-pin.svg';
 import './MarkerWindow.css';
@@ -30,7 +30,7 @@ class MarkerWindow extends Component {
     }
 
     render() {
-        const { markerDetails, loaded } = this.state;
+        const { markerDetails, loaded, error } = this.state;
         const google = window.google; // no-undef fix https://github.com/tomchentw/react-google-maps/issues/434
         const { placeId, placePos, onToggleOpen, showInfoId, action } = this.props;
         return (
@@ -48,8 +48,8 @@ class MarkerWindow extends Component {
                         key={placeId}
                         onCloseClick={() => onToggleOpen(placeId, 'close')}
                     >
-                        {
-                            <div className="details-place" tabIndex="0" key={placeId}>
+                        {error ? <Error message="Foursquare didn't respond. Try again later" />
+                            : <div className="details-place" tabIndex="0" key={placeId}>
                                 <h3 className="details-title">
                                     <a href={markerDetails.canonicalUrl}>{markerDetails.name}</a>
                                 </h3>
