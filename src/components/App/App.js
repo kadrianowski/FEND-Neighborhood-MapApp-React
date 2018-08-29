@@ -11,10 +11,10 @@ class App extends Component {
     places: [],
     showingPlaces: [],
     query: '',
-    center: { lat: 40.712776, lng: -74.005974 },
+    center: { lat: 40.7537916, lng: -73.983607 },
     showInfoId: false,
     loaded: false,
-    action:''
+    action: ''
   }
 
   componentDidMount() {
@@ -38,11 +38,11 @@ class App extends Component {
         <Header />
         <div className="content">
           <Map
-           onToggleOpen={this.onToggleOpen}
-           showInfoId={this.state.showInfoId}
-           action={this.state.action}
-           places={this.state.places}
-           showingPlaces={this.state.showingPlaces}
+            onToggleOpen={this.onToggleOpen}
+            showInfoId={this.state.showInfoId}
+            action={this.state.action}
+            places={this.state.places}
+            showingPlaces={this.state.showingPlaces}
           />
         </div>
         <Footer />

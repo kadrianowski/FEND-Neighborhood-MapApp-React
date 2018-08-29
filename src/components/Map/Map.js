@@ -17,7 +17,7 @@ const Map = compose(
     withGoogleMap
 )(props =>
     <GoogleMap
-        defaultCenter={{ lat: 40.712776, lng: -74.005974 }}
+        defaultCenter={{ lat:40.7537916, lng: -73.983607 }}
         defaultZoom={12}
         defaultOptions={{ styles: snazzyMap }}
     >
