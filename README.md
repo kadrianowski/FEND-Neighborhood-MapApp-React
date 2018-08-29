@@ -20,8 +20,9 @@ To achieve that I decided to create **_Neighborhood Map - Parks of New York_**
 * [Create React App](https://github.com/facebook/create-react-app) repository
 * I used a premade styling from [SnazzyMaps](https://snazzymaps.com/style/47/nature). All styles are licensed under [creative commons](https://creativecommons.org/publicdomain/zero/1.0/) and are completely free to use
 * [react-google-maps](https://github.com/tomchentw/react-google-maps) package. The best documented component I've found, you can read the docs [here](https://tomchentw.github.io/react-google-maps/)
-* [recompose](https://github.com/acdlite/recompose) is a React utility belt for function components and higher-order components.
+* [recompose](https://github.com/acdlite/recompose), a React utility belt for function components and higher-order components.
 * [react-icons](https://www.npmjs.com/package/react-icons) package
+* [react-throttle](https://www.npmjs.com/package/react-throttle) for debouncing the filter
 
 # Special Thanks
 
