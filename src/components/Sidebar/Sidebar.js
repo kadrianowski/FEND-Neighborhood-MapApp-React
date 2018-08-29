@@ -10,7 +10,7 @@ const Sidebar = ({ data, filterPlaces, onToggleOpen }) => {
     return (
         <aside className="sidebar">
             <h2 className="sidebar-title" tabIndex="0">
-                <img src={Filter} alt="Filter" className="icon" title="Filter icon" />
+                <img src={Filter} alt="Filter icon" className="icon" title="Filter results" />
                 Filter results
         </h2>
             <div className="input-wrapper">

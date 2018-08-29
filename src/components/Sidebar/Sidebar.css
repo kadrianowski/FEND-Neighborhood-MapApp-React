@@ -75,13 +75,13 @@
   }
   
   @media (max-width: 1179px) {
-    .filter {
+    .sidebar {
       width: 40%;
     }
   }
   
   @media (max-width: 679px) {
-    .filter {
+    .sidebar {
       width: 100%;
     }
   }
