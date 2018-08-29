@@ -2,18 +2,22 @@
 
 # About the Project
 
-It's a final SPA project featuring a map of a chosen neighborhood. The goal of this project was to create a functional project with a react mindset, including highlighted locations, third-party data about those locations and various ways to browse the content. 
+It's a final SPA project featuring a map of a chosen neighborhood. The goal of this project was to create a functional project with a react mindset, including highlighted locations, third-party data about those locations and various ways to browse the content.
 
 To achieve that I decided to create **_Neighborhood Map - Parks of New York_**
 
-# How to start?
+# How to start ?
 
 * Clone this [repository](https://github.com/soyaposeidon/FEND-Neighborhood-MapApp-React.git)
 * type **_npm install_** in your favorite console
 * run localhost:3000 server with **_npm start_**
+* for production build enter **_npm run build_**
 
-# Features 
+# Features
 
+The map uses Foursquare's API to fetch information about parks of New York. InfoWindow provides rating, address and the best photo of the venue. App also provides basic functionality to filter and search for places using concepts learnt during Udacity course on React.
+
+* if you want to add more places, just list them accordingly in the **_markerData.json_** file. Don't forget to provide an ID and app will do the rest.
 
 # Dependencies
 
@@ -23,6 +27,7 @@ To achieve that I decided to create **_Neighborhood Map - Parks of New York_**
 * [recompose](https://github.com/acdlite/recompose), a React utility belt for function components and higher-order components.
 * [react-icons](https://www.npmjs.com/package/react-icons) package
 * [react-throttle](https://www.npmjs.com/package/react-throttle) for debouncing the filter
+* [sort-by](https://www.npmjs.com/package/sort-by) and [escape-string-regexp](https://www.npmjs.com/package/escape-string-regexp) for sorting and filtering parks
 
 # Special Thanks
 
