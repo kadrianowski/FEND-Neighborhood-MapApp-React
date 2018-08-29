@@ -7,6 +7,7 @@ import Sidebar from '../Sidebar/Sidebar';
 import escapeRegExp from 'escape-string-regexp';
 import sortBy from 'sort-by';
 
+
 import './App.css';
 
 class App extends Component {
