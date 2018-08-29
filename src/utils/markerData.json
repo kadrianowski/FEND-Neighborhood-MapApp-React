@@ -54,5 +54,29 @@
             "lat": 40.756178,
             "lng": -73.948879
         }
+    },
+    {
+        "id": "40b68100f964a5207d001fe3",
+        "name": "Madison Square Park",
+        "position": {
+            "lat": 40.742037,
+            "lng": -73.987563
+        }
+    },
+    {
+        "id": "49e377baf964a52084621fe3",
+        "name": "Pier A Park",
+        "position": {
+            "lat": 40.736777,
+            "lng": -74.026579
+        }
+    },
+    {
+        "id": "43222200f964a5209a271fe3",
+        "name": "Astoria Park",
+        "position": {
+            "lat": 40.777760,
+            "lng": -73.923551
+        }
     }
 ]

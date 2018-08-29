@@ -15,6 +15,10 @@ To achieve that I decided to create **_Neighborhood Map - Parks of New York_**
 
 # Features
 
+- [x] Google Maps API
+- [x] Foursquare API
+- [x] React
+
 The map uses Foursquare's API to fetch information about parks of New York. InfoWindow provides rating, address and the best photo of the venue. App also provides basic functionality to filter and search for places using concepts learnt during Udacity course on React.
 
 * if you want to add more places, just list them accordingly in the **_markerData.json_** file. Don't forget to provide an ID and app will do the rest.
