@@ -40,22 +40,6 @@
         }
     },
     {
-        "id": "40b68100f964a5207d001fe3",
-        "name": "Madison Square Park",
-        "position": {
-            "lat": 40.742037,
-            "lng": -73.987563
-        }
-    },
-    {
-        "id": "49e377baf964a52084621fe3",
-        "name": "Pier A Park",
-        "position": {
-            "lat": 40.736777,
-            "lng": -74.026579
-        }
-    },
-    {
         "id": "49f4884ef964a520156b1fe3",
         "name": "East River Park",
         "position": {

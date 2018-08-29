@@ -5,12 +5,13 @@ import { withScriptjs, withGoogleMap, GoogleMap } from "react-google-maps";
 import MarkerWindow from '../MarkerWindow/MarkerWindow';
 
 import snazzyMap from '../../utils/snazzyMap.json';
+import './Map.css';
 
 const Map = compose(
     withProps({
         googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDdUXGQw9M4Ev1RgXWfHeoodC8cGcVRSiI&v=3.exp&libraries=geometry,drawing,places",
         loadingElement: <div style={{ height: `100%` }} />,
-        containerElement: <div style={{ height: `477px` }} />,
+        containerElement: <div className="map" />,
         mapElement: <div style={{ height: `100%` }} />,
     }),
     withScriptjs,
