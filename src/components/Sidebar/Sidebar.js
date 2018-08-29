@@ -9,15 +9,16 @@ const Sidebar = ({ data, filterPlaces, onToggleOpen }) => {
 
     return (
         <aside className="sidebar">
-            <h2 className="sidebar-title">
-    <img src={Filter} alt="Filter" className="icon"/>
-                Filter Search
+            <h2 className="sidebar-title" tabIndex="0">
+                <img src={Filter} alt="Filter" className="icon" title="Filter icon" />
+                Filter results
         </h2>
             <div className="input-wrapper">
                 <Debounce time="300" handler="onChange">
                     <input
                         type="text"
                         placeholder="What park are you looking for?"
+                        aria-label="What park are you looking for?"
                         onChange={e => filterPlaces(e.target.value)}
                     />
                 </Debounce>
@@ -32,6 +33,7 @@ const Sidebar = ({ data, filterPlaces, onToggleOpen }) => {
                             <li
                                 key={place.id}
                                 className="result-item"
+                                tabIndex="0"
                                 onClick={() => onToggleOpen(place.id, 'open')}
                             >
                                 {place.name}

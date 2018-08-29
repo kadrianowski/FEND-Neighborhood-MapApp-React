@@ -11,7 +11,7 @@ const Map = compose(
     withProps({
         googleMapURL: "https://maps.googleapis.com/maps/api/js?key=AIzaSyDdUXGQw9M4Ev1RgXWfHeoodC8cGcVRSiI&v=3.exp&libraries=geometry,drawing,places",
         loadingElement: <div style={{ height: `100%` }} />,
-        containerElement: <div className="map" />,
+        containerElement: <div className="map"  role="application" tabIndex="0" />,
         mapElement: <div style={{ height: `100%` }} />,
     }),
     withScriptjs,

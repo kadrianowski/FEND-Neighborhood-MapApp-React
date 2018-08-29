@@ -49,16 +49,17 @@ class MarkerWindow extends Component {
                         onCloseClick={() => onToggleOpen(placeId, 'close')}
                     >
                         {
-                            <div className="details-place" key={placeId}>
+                            <div className="details-place" tabIndex="0" key={placeId}>
                                 <h3 className="details-title">
                                     <a href={markerDetails.canonicalUrl}>{markerDetails.name}</a>
                                 </h3>
                                 <p className="details-address">{markerDetails.location.address}</p>
-                                <div className="details-rating">
-                                    <img className="icon" src={StarIcon} alt="rating star icon" />
-                                    <span className="rating-number">{markerDetails.rating}</span>
+                                <div className="details-rating"
+                                    title={`The rating is ${markerDetails.rating}`}>
+                                    <img className="icon" src={StarIcon} alt="rating star icon" aria-hidden="true" />
+                                    <span className="rating-number" aria-hidden="true">{markerDetails.rating}</span>
                                 </div>
-                                <a className="details-fsicon" href={markerDetails.canonicalUrl}>
+                                <a className="details-fsicon" href={markerDetails.canonicalUrl} title="Read more at Foursquare">
                                     <img src={FoursquareIcon} alt="Foursquare icon" />
                                 </a>
                                 <div className="details-img">

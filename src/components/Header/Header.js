@@ -5,7 +5,7 @@ class Header extends Component {
     render() {
         return (
             <header>
-                <h1 className="title">Neighborhood Map - Parks of New York</h1>
+                <h1 className="title" aria-label="Parks of New York">Neighborhood Map - Parks of New York</h1>
             </header>
         )
     }
